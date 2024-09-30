@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="17sp">
+
+    <!-- Display area -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:textSize="32sp"
+        android:padding="30dp"
+        android:text="0" />
+
+    <!-- History area inside a CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:elevation="4dp"
+        android:padding="8dp">
+
+        <!-- Scrollable history -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="History"
+                android:textSize="12sp"
+                android:maxHeight="150dp" />
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Grid Layout for the buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:columnCount="4"
+        android:padding="12dp"
+        android:rowCount="5"
+        android:layout_gravity="center">
+
+        <!-- Row 1 -->
+        <Button
+            android:id="@+id/btn_ac"
+            android:text="AC" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:text="⌫" />
+
+        <Button
+            android:id="@+id/btn_plusminus"
+            android:text="+/-" />
+
+        <Button
+            android:id="@+id/btn_divide"
+            android:text="÷" />
+
+        <!-- Row 2 -->
+        <Button
+            android:id="@+id/btn7"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btn_multiply"
+            android:text="×" />
+
+        <!-- Row 3 -->
+        <Button
+            android:id="@+id/btn4"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn_subtract"
+            android:text="−" />
+
+        <!-- Row 4 -->
+        <Button
+            android:id="@+id/btn1"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:text="+" />
+
+        <!-- Row 5 -->
+        <Button
+            android:id="@+id/btn0"
+            android:layout_columnSpan="2"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_dot"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btn_equals"
+            android:text="=" />
+    </GridLayout>
+</LinearLayout>
