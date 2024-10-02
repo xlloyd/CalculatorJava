@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="17sp">
+    android:padding="17dp">
+
 
     <!-- Display area -->
     <TextView
@@ -11,15 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="end"
-        android:textSize="32sp"
+        android:textSize="40dp"
         android:padding="30dp"
         android:text="0" />
 
+    
     <!-- History area inside a CardView -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:elevation="4dp"
         android:padding="8dp">
 
@@ -35,101 +37,122 @@
                 android:gravity="start"
                 android:padding="8dp"
                 android:text="History"
-                android:textSize="12sp"
-                android:maxHeight="150dp" />
+                android:textSize="18sp" /> <!-- Changed from dp to sp for text size -->
         </ScrollView>
     </androidx.cardview.widget.CardView>
 
+
     <!-- Grid Layout for the buttons -->
     <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_width="390dp"
+        android:layout_height="323dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
         android:columnCount="4"
-        android:padding="12dp"
-        android:rowCount="5"
-        android:layout_gravity="center">
+        android:padding="15dp"
+        android:rowCount="5">
 
         <!-- Row 1 -->
         <Button
             android:id="@+id/btn_ac"
-            android:text="AC" />
+            android:text="AC"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_back"
-            android:text="⌫" />
+            android:text="⌫"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_plusminus"
-            android:text="+/-" />
+            android:text="+/-"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn_divide"
-            android:text="÷" />
+            android:text="÷"
+            android:textSize="18dp" />
 
         <!-- Row 2 -->
         <Button
             android:id="@+id/btn7"
-            android:text="7" />
+            android:text="7"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn8"
-            android:text="8" />
+            android:text="8"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn9"
-            android:text="9" />
+            android:text="9"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn_multiply"
-            android:text="×" />
+            android:text="×"
+            android:textSize="18dp" />
 
         <!-- Row 3 -->
         <Button
             android:id="@+id/btn4"
-            android:text="4" />
+            android:text="4"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn5"
-            android:text="5" />
+            android:text="5"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn6"
-            android:text="6" />
+            android:text="6"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn_subtract"
-            android:text="−" />
+            android:text="−"
+            android:textSize="18dp" />
 
         <!-- Row 4 -->
         <Button
             android:id="@+id/btn1"
-            android:text="1" />
+            android:text="1"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn2"
-            android:text="2" />
+            android:text="2"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn3"
-            android:text="3" />
+            android:text="3"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn_add"
-            android:text="+" />
+            android:text="+"
+            android:textSize="18dp" />
 
-        <!-- Row 5 -->
+
         <Button
             android:id="@+id/btn0"
             android:layout_columnSpan="2"
-            android:text="0" />
+            android:text="0"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn_dot"
-            android:text="." />
+            android:text="."
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn_equals"
-            android:text="=" />
+            android:text="="
+            android:textSize="18dp" />
     </GridLayout>
 </LinearLayout>

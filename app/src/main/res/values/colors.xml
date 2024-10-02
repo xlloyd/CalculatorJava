@@ -6,4 +6,7 @@
     <color name="displayBackground">#FFFFFF</color>
     <color name="historyBackground">#F0F0F0</color>
     <color name="historyText">#666666</color>
+
+
+    <color name="orange">#FFA500</color>
 </resources>
